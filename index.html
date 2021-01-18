@@ -1,0 +1,954 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gig Economy</title>
+    <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--    -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+<!--    -->
+  <style>
+  html {
+    scroll-behavior: smooth;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+}
+
+.blogs{
+  padding: 44px 28px 28px 28px;
+  display:none;
+}
+#fab{
+ position:relative;
+  top:2px;
+  animation:rot 2s linear infinite;
+}
+@keyframes rot{
+  0%{
+    transform:rotate(0deg);
+  }
+  100%{
+    transform:rotate(360deg);
+  }
+}
+#label {
+    display: none;
+}
+
+#a:hover {
+    text-decoration: overline;
+    transition: 1.4s;
+    font-weight: 600;
+}
+
+@keyframes rotate {
+    from {
+        transform: translateX(-6px);
+    }
+    to {
+        transform: translateX(2px);
+    }
+}
+
+.header {
+    padding: 18px 0px;
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-family: system-ui;
+    font-size: 13px;
+    position: fixed;
+    color: white;
+    background: #dd1919;
+    width: 100%;
+    z-index: 1111111111;
+}
+
+.navbar .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+}
+
+.col:nth-child(3) {
+    display: none;
+}
+
+.col:nth-child(1) h2 {
+    position: relative;
+    font-size: 15px;
+    font-family: ui-sans-serif;
+    transform: translateY(1.5px);
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.col:nth-child(2) {
+    padding-top: 4px;
+}
+
+.col:nth-child(2) ul {
+    display: flex;
+    list-style-type: none;
+    /* text-align: center; */
+    /* width: 200px; */
+    text-indent: 39px;
+}
+
+.col:nth-child(2) ul a {
+    margin: 0px -4px 0px 0px;
+    position: relative;
+    top: -2px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.navbtn {
+    display: none;
+}
+
+.container {
+    padding: 44px 28px 28px 28px;
+}
+
+.title {
+    text-transform: uppercase;
+   font-family: 'Bungee', cursive;
+    letter-spacing: 6px;
+    color: #0061c1;
+    font-size: 34px;
+  padding-bottom:13px;
+    font-weight: 300;
+    margin-top: 30px;
+  text-align:left;
+}
+
+.mee {
+    font-size: 14px;
+    font-family: -webkit-pictograph;
+   color: #6c6767;
+/*     text-transform: lowercase; */
+    font-weight: 200;
+    padding-top: 20px;
+}
+
+.sub-title {
+    text-transform: capitalize;
+    font-family: system-ui;
+    color: #7294a5;
+    font-size: 17px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #9a979742;
+    margin-bottom: 20px;
+}
+
+.head-1 {
+    font-family: -webkit-pictograph;
+    padding: 8px 0px;
+    margin-top: 4px;
+    font-weight: bolder;
+    padding-top: 45px;
+}
+.part-1 a {
+    color: #45676c;
+}
+
+.part-1 a:hover {
+    color: #0061c1;
+}
+
+.part-1 a:active {
+    color: red;
+}
+
+.head-2 {
+    font-size: 16px;
+    color: red;
+    padding-bottom: 9px;
+    font-family: -webkit-pictograph;
+}
+
+.para {
+    padding: 15px 0px;
+    font-family: system-ui;
+    font-size: 17px;
+    color: #222242;
+    text-align: left;
+}
+section ul {
+  padding: 15px 30px;
+    font-family: system-ui;
+    font-size: 17px;
+    color: #222242;
+    text-align: left;
+  text-transform:capitalize;
+}
+section li{
+  padding:2px;
+}
+
+
+.pic {
+    width: 100%;
+    height: 382px;
+    text-align: center;
+    /* background: wheat; */
+    /* margin-bottom: 7%; */
+    margin: 12px 0px;
+}
+
+#im-1 {
+    width: 100%;
+    height: 385px;
+}
+.img-hold {
+    display: grid;
+    grid-template-columns: repeat(4, 210px);
+    justify-content: space-evenly;
+}
+
+.imgg {
+    width: 199px;
+    height: 150px;
+    background: wheat;
+    margin: 25px 0px;
+}
+
+marquee {
+    font-family: sans-serif;
+    color: red;
+    font-size: 16px;
+}
+
+footer {
+    width: 100%;
+    height: 33%;
+    background: #d9d9d9;
+}
+
+footer ul {
+    position: relative;
+}
+
+footer li {
+    /* text-align: center; */
+    color: #521717;
+    list-style-type: none;
+    font-family: system-ui;
+    font-size: 15px;
+}
+.foo-set {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    justify-content: space-evenly;
+    padding-top: 35px;
+   padding-bottom: 35px;
+}
+
+.foo-container p {
+    text-align: center;
+    /* transform: translateY(10px); */
+    color: #3d6d85;
+    font-family: -webkit-pictograph;
+    font-size: 15px;
+    padding-top: 20px;
+}
+.lll span{
+  padding:0px 15px;
+    font-family: -webkit-pictograph;
+  
+}
+.social {
+    background: #9e9e9e3d;
+    position: fixed;
+    width: 20px;
+    height: 21px;
+    right: 0px;
+    top: 66px;
+    border-radius: 3px 0px 0px 3px;
+    border: 1px solid black;
+    border-right: none;
+    text-align: center;
+}
+
+.part-1 ol {
+    font-size: 15px;
+    padding: 0px 0px 0px 15px;
+    font-family: -webkit-pictograph;
+    list-style-type: none;
+    color: #45676c;
+    border-left: 4px solid;
+    margin: 20px 0px 20px 6px;
+    padding: 20px;
+    background: #8ee87e29;
+    text-decoration: underline;
+}
+
+.part-1 ol li {
+    padding: 7px 0px;
+}
+
+.media {
+    position: fixed;
+    background: #00000085;
+    top: 90px;
+    right: -20px;
+    width: 20px;
+    height: 100px;
+    text-align: center;
+    display: block;
+    transition: 0.3s;
+}
+
+.boxx {
+    background: #4CAF50;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+  padding-top:3.5px;
+}
+
+.boxx:nth-child(1) {
+    background-color: #ff84ae;
+}
+.boxx:nth-child(2) {
+    background-color: #17d2c0;
+}
+.boxx:nth-child(3) {
+    background-color: #fff6a9;
+}
+.boxx:nth-child(4) {
+    background-color: #7bbcef;
+}
+.boxx:nth-child(5) {
+    background-color: #ff7878eb;
+}
+
+.boxx2{
+  padding:0px 10px;
+  font-size:25px;
+}
+ textarea {
+            width: 98%;
+            height: 98px;
+            margin-top: 17px;
+            border: 2px solid #dddddd;
+            padding: 3px;
+            box-shadow: inset 0 0 20px 1px #80808059;
+            background: #dddddd;
+            border-radius: 5px;
+            outline: none;
+        }
+ .aboutpage {
+            padding: 44px 28px 28px 28px;
+            display: none;
+        }
+        
+        .contactsPage {
+            padding: 44px 28px 28px 28px;
+        }
+        .form {
+            display: flex;
+        }
+      input {
+            width: 99%;
+            /* height: 78px; */
+            margin-top: 17px;
+            border: 2px solid #dddddd;
+            padding: 6px;
+            box-shadow: inset 0 0 20px 1px #80808059;
+            background: #dddddd;
+            border-radius: 5px;
+            outline: none;
+            margin: 10px 3px;
+        }
+        
+        #submit {
+            background: #0000ff73;
+            margin-top: 20px;
+            text-align: center;
+            width: 106px;
+            border-radius: 5px;
+            color: white;
+            font-family: -webkit-pictograph;
+            padding: 4px;
+            text-transform: uppercase;
+            font-size: 11px;
+        }
+.boxx2 a{
+  color:red;
+}
+.boxx2 a:hover{
+  color:black;
+}
+
+/*media queries*/
+
+@media (max-width:835px) {
+    .img-hold {
+        display: grid;
+        grid-template-columns: repeat(3, 210px);
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width:660px) {
+    .img-hold {
+        display: grid;
+        grid-template-columns: repeat(2, 210px);
+        justify-content: space-evenly;
+    }
+     .pic {
+        width: 100%;
+        height: 271px;
+        text-align: center;
+        /* background: wheat; */
+        /* margin-bottom: 7%; */
+        margin: 12px 0px;
+       
+    }
+    #im-1 {
+        width: 100%;
+        height: 271px;
+    }
+  .form {
+    display: block;
+}
+  input {
+            width: 95%;
+            /* height: 78px; */
+            margin-top: 17px;
+            border: 2px solid #dddddd;
+            padding: 6px;
+            box-shadow: inset 0 0 20px 1px #80808059;
+            background: #dddddd;
+            border-radius: 5px;
+            outline: none;
+            margin: 10px 3px;
+        }
+}
+
+@media (max-width:460px) {
+    #label {
+        display: block;
+    }
+    .hidden {
+        position: fixed;
+        background: #cecece6e;
+        width: 87%;
+        padding: 27px;
+        top: -160px;
+        left: 0px;
+        z-index: 111;
+        border: 2px solid #e2e2e2;
+        display: block;
+        transition: 0.6s linear;
+    }
+    #nvv:checked~.hidden {
+        top: 100px;
+    }
+    .hidden ul {
+        list-style-type: none;
+        padding: 20px;
+        background: #e4e4e4c9;
+        box-shadow: 2px 0px 14px 2px grey;
+    }
+    .hidden a {
+        color: #000000;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: -webkit-pictograph;
+        font-size: 14px;
+        font-weight: bolder;
+        letter-spacing: 2px;
+    }
+    .hidden li {
+        margin-bottom: 2px;
+    }
+    #aa:hover {
+        color: #b60808;;
+    }
+    .col:nth-child(2) {
+        display: none;
+    }
+    .col:nth-child(3) {
+        display: block;
+    }
+    .foo-set {
+        display: grid;
+        grid-template-columns: repeat(3, 60px);
+        justify-content: space-evenly;
+        padding: 35px 15px;
+    }
+    .imgg {
+        width: 176px;
+        height: 130px;
+        background: wheat;
+        margin: 25px 16px;
+    }
+}
+
+@media (max-width:413px) {
+    .img-hold {
+        display: block;
+        text-align: center;
+    }
+    .imgg {
+        width: 273px;
+        height: 139px;
+        background: wheat;
+        transform: translateX(7px);
+    }
+}
+
+@media (max-width:385px) {
+    .imgg {
+        width: 273px;
+        height: 139px;
+        background: wheat;
+        transform: translateX(-2px);
+    }
+}
+
+@media (max-width:370px) {
+    .imgg {
+        width: 273px;
+        height: 139px;
+        background: wheat;
+        transform: translateX(-6px);
+    }
+}
+
+@media (max-width:360px) {
+    .title {
+        font-size: 30px;
+    }
+    @media (max-width:385px) {
+        .imgg {
+            width: 265px;
+            height: 139px;
+            background: wheat;
+            transform: translateX(-8px);
+        }
+    }
+}
+
+@media (max-width:346px) {
+    .imgg {
+        width: 251px;
+        height: 139px;
+        background: wheat;
+        transform: translateX(-8px);
+    }
+}
+
+@media (max-width:330px) {
+    .imgg {
+        width: 233px;
+        height: 139px;
+        background: wheat;
+        transform: translateX(-8px);
+    }
+}
+
+@media (max-width:316px) {
+    .title {
+        font-size: 26px;
+    }
+    .head-1 {
+        font-size: 21px;
+    }
+    .head-2 {
+        font-size: 15px;
+    }
+}
+  </style>
+<!--    -->
+</head>
+
+<body>
+    <div class="full">
+        <div class="navbar">
+            <div class="row">
+                <div class="col">
+                  <h2><a href="#" style="text-decoration:none;color:white;">blogist's.</a></h2>
+                </div>
+                <div class="col">
+                    <ul>
+                        <a class="hhoom steps"  href="#" id="a" active>
+                            <li>home</li>
+                        </a>
+                        <a  class="b1 steps" href="#" id="a">
+                            <li>blogs</li>
+                        </a>
+                        <a class="co1" href="#connect" class="steps" id="a">
+                            <li>contact</li>
+                        </a>
+                        <a class="aboutp" href="#" class="steps" id="a">
+                            <li>about</li>
+                        </a>
+                    </ul>
+                </div>
+                <input type="checkbox" id="nvv" style="display: none;" checked>
+                <label for="nvv" id="label" onclick="goDown()"><i style='font-size:20px' class='fas'>&#xf7a4;</i></label>
+
+            </div>
+        </div>
+        <div class="hidden" id="hidden">
+
+            <div class="col">
+
+                <ul>
+                    <li><a class="hhoom2" href="#" id="aa">home</a></li>
+                    <li><a class="b2" href="#" id="aa">blogs</a></li>
+                    <li><a class="co2" href="#connect" id="aa">contact</a></li>
+                    <li><a class="aboutp2" href="#" id="aa">about</a></li>
+                </ul>
+            </div>
+        </div>
+        <main class="container">
+
+            <div class="sub-container">
+                <div class="header">
+                  <h3 class="mee">8 January 2020</h3>
+                    <h1 class="title">kick into GIG.</h1>
+                    <h3 class="sub-title">growing even in the covid-19 period</h3>
+                         
+                    <div class="pic"><img src="https://i.postimg.cc/zB0Z88zr/pic-1.jpg" id="im-1" alt="gig economy"></div>
+            
+                    <input type="checkbox" id="med" style="display: none;" checked>
+                    <label for="med" class="social" id="social" onclick="mediaGo()"><div id="rotate" style="text-align: center;"><i style="font-size:16px;transform:translateY(2px)" class="material-icons" id="fab">&#xe8b8;</i></div></label>
+
+                    <div class="media" id="media">
+                        <div class="boxx"><i class="fa fa-instagram"></i></div>
+                        <div class="boxx"><i class="fa fa-linkedin"></i></div>
+                        <div class="boxx"><i class="fa fa-youtube"></i></div>
+                        <div class="boxx"><i class="fa fa-facebook"></i></div>
+                        <div class="boxx"><i class="fa fa-dropbox"></i></div>
+                    </div>
+                    <marquee behavior="smooth" direction="left">In a gig economy, temporary, flexible jobs are commonplace and companies tend to hire independent contractors and freelancers instead of full-time employees. A gig economy undermines the traditional economy of full-time workers who rarely change positions and instead focus on a lifetime career.</marquee>
+
+                    <h3 class="mee">by&nbsp;Swetha&nbsp;Baskaran</h3>
+                </div>
+
+            </div>
+            <section class="part-1">
+                <h1 class="head-1">what is GIG economy?</h1>
+                <h2 class="head-2">a simple overview...</h2>
+                <p class="para">Have you herd about freelancing jobs even it was been so much popular in the COVID-19 pandamic stage . All of this jobs comes under the GIG category.The gig economy works much the same way (without the need to carry a tune). Instead of a traditional, in-office, full-time job with a single company, gig workers work as short-term, temporary, or independent contractors for one or a variety of employers (though they are not employers in the traditional sense).<br><br>
+
+Though the term “gig economy” is relatively new, these nontraditional work arrangements have been around a long time. A study by the American Staffing Association found that the majority of Americans (78%) see the gig economy as a new way to describe the participation of this longstanding independent workforce.</p>
+                <img src="" alt="">
+
+            </section>
+ 
+
+            <section class="part-1" id="picture">
+                <h1 class="head-1">GIG related jobs</h1>
+               <h3 class="sub-title">just a picture comprehenssion</h3>
+                <div class="img-hold">
+                    <div class="imgg" style="background:url(https://i.postimg.cc/Zq1QFnwj/pic-2.jpg);background-size:cover;"></div>
+                    <div class="imgg" style="background:url(https://i.postimg.cc/hvrsQtJC/pic-5.jpg);background-size:cover;"></div>
+                    <div class="imgg" style="background:url(https://i.postimg.cc/W4wdvFxf/pic-6.jpg);background-size:cover;"></div>
+                    <div class="imgg" style="background:url(https://i.postimg.cc/Hks5BCny/pic-10.jpg);background-size:cover;"></div>
+                    <div class="imgg" style="background:url(https://i.postimg.cc/yNyybNj7/pic-9.jpg);background-size:cover;"></div>
+                    
+                </div>
+
+
+
+
+            </section>
+              <section class="part-1" id="faqq">
+                <h1 class="head-1">Faq</h1>
+                  <h3 class="sub-title">Questions you can frequently have on yourselves</h3>
+                <ol>
+                    <a href="#num-1">
+                        <li>GIG - expansion?</li>
+                    </a>
+                   <a href="#num-3">
+                        <li>Top ten gig related jobs</li>
+                    </a>
+                    <a href="#num-2">
+                        <li>What is the benifits of this gig to the WORKERS?</li>
+                    </a>
+                   
+                    <a href="#num-4">
+                        <li>How people commits themselves in it?</li>
+                    </a>
+                    
+                    <a href="#num-6">
+                        <li>GIG - whether it satisfies the employees daily needs?</li>
+                    </a>
+                </ol>
+            </section>
+            <section class="part-1" id="num-1">
+                <h1 class="head-1">GIG - expansion?</h1>
+                <h2 class="head-2">is it means as a normal economy?</h2>
+                <p class="para">A gig economy is a free and global market where companies and contractors (independent workers) set short-term and on-demand professional relationships that are both flexible and skill-based.
+In other words, digital platforms like Upwork or Fiverr have been allowing a big number of freelancers (or people with a fulltime job wanting to make extra money) to show their skillset. On the other hand, businesses can choose specialized staff from all over the world. This allows them to afford expensive skills for a short period or to have low recruitment and selection costs as there’s a large pool of candidates to choose from.</p>
+                <img src="" alt="">
+
+            </section>
+            <div class="pic"><img src="https://i.postimg.cc/432rmZ7b/pic-3.jpg" id="im-1" alt="gig economy"></div>
+          <section class="part-1" id="num-3">
+                <h1 class="head-1">Top 10 related jobs</h1>
+                <h2 class="head-2">and also too more!.</h2>
+                <p class="para">
+                  In this part we can get to know top ten GIG related jobs by which you can earn money . Firstly, these jobs had been in place of action even in the pandamic COVID-19 lockdown periods.Some of them are...
+                  <br>
+              <ul>
+                <li>freelancing
+                <li>driver/deliverer</li>
+                <li>web developer</li>
+                <li>youtuber</li>
+                <li>instagram marketer</li>
+                <li>chef</li>
+                <li>online teacher</li>
+                <li>writer</li>
+                <li>photographer</li>
+                
+           
+              </ul>
+                </p>
+          <h1 class="head-1">Freelancing</h1>
+          <p class="para">Freelancing is one of the most popular gig economy jobs and hence there are many options to find work. Freelancing is particularly popular now because it can continue to be done during social isolation in most cases.</p>
+
+            </section>
+            <section class="part-1" id="num-2">
+                <h1 class="head-1">what is the benifits of this gig to the WORKERS? </h1>
+                <h2 class="head-2">the exact one word answer to say is FLEXIBILITY...</h2>
+                <p class="para">Gig workers are a flexible option for employers who want to expand into new markets, have seasonal highs and lows, or require a national footprint of field workers but can’t afford the overhead of full-time workers on the ground. By tapping into on-demand gig workers, employers can remain nimble and cost effective by utilizing gig economy platforms. Gig workers can be dispatched at a moment’s notice, receive notifications via mobile tech, and upload completed work. Simple as that. </p>
+                <img src="" alt="">
+
+            </section>
+           
+            <section class="part-1" id="num-4">
+                <h1 class="head-1">how people commits themselves in it?</h1>
+                <h2 class="head-2">is it means as a normal economy?</h2>
+                <p class="para">People don’t need to commit to a job they don’t want, but nor must they depend on unemployment insurance or debt.But now they had a chance to commit themselves in a small job while between this mean time to satisfy their needs.Then after if they had founded a solid and well sofesticated job , they will jump into it easily.they dose'nt have any worries about the current small job ,because they had invested a very very little amount in it . Their life fuilfilled .Thus, because of they got a "JOB" an they will be able to make "MONEY! MONEY! MONEY!" . This is how people involves themselves into GIG.</p>
+              <p class="para">yush!!!! Secret thing.....(..."that many people commits themselves in  GIG for making 'MONEY' additional to their current jobs ....freelancingily"....)</p>
+                <img src="" alt="">
+
+            </section>
+            <div class="pic"><img src="https://i.postimg.cc/cL2HwqnZ/pic-11.jpg" id="im-1" alt="gig economy"></div>
+
+            <section class="part-1" id="num-5">
+                <h1 class="head-1">GIG - comes under which sector?</h1>
+                <h2 class="head-2">is it means as a normal economy?</h2>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ad minima doloremque labore quod repellendus. Quidem animi neque, ad ipsum provident modi tempore impedit voluptatibus debitis sapiente deleniti adipisci in doloribus magni
+                    iure, deserunt eligendi fuga assumenda illum! Officiis quam quaerat perspiciatis, voluptatem, doloremque esse, similique magnam rem qui quia facere. Voluptatum rerum quia perspiciatis quo, pariatur labore veniam atque minus, accusamus
+                    totam consectetur reiciendis dignissimos molestias id dicta velit provident eaque veritatis, ab rem quam repudiandae accusantium beatae harum. Corporis ad voluptate provident rerum magnam, eos totam ducimus in unde, veritatis odit
+                    soluta minima quibusdam, tempore maiores dolores libero.</p>
+                <img src="" alt="">
+
+            </section>
+            <section class="part-1" id="num-6">
+                <h1 class="head-1">GIG - whether it satisfies the employees daily needs?</h1>
+                <h2 class="head-2">is it means as a normal economy?</h2>
+                <p class="para">Absolutely, Yes...let's come upon a real example.One of my friend who was working on a private company dose'nt got any salary during the corana period . His family had struggled to manage their daily needs . Even they borrowed money form their neighbours and relitives and ran their life in somehow possible way . But it is is not sufficient for them .<br><br> He is good at home gardenning. Then my friend got an idea of why don't to start a freelancing bussiness on selling organic seeds and plants at a resonable cost . Some ideas too have scrolled on his mind . First he started with a very very little investements along with his family members . He got some profit even at the first attempt . Then it had given him a hope to continue it long . He also started aa YOUTUBE chanel to describe about gardenning and doing blogs and etc . Till now his company was not started but he is capable of earning several dollers on his own...I'ts all by his freelancing work through this GIG .</p><p class="para">But in our opinion if you done well you will deserves what u wish...All you need to do is do everything with a focused and hopefull mindset.Then SUCCESS is on your hands...</p>
+                <img src="" alt="">
+
+            </section>
+        </main>
+       <!---------------------------about------------------------------->
+        <div class="aboutpage">
+            <h1 class="title">about</h1>
+            <h3 class="sub-title">story about this blog</h3>
+            <p class="para">
+              I'm Swetha Baskaran , a Computer Science student and also a freelancing Web Developer . I was very much intrested at doing something new . I was very much intrested at coding . I was been learning for few years . Now I wishes to create some bolgs . and I had serched for a relevant topics for createting a blog . On that time I read an article about GIG ECONOMY in a magazine . It made me to create this blog to implement my skills . But , i felt this was not an enough stuff for me ...   
+            </p>
+
+        </div>
+<!-----------------------------------blogs--------------------->
+       <div class="blogs">
+            <h1 class="title">blogs</h1>
+            <h3 class="sub-title">various  blog links ...</h3>
+         <p class="para">Hello readers!For your kind information,I want to convey you.This was my first blog that I had posted on the internet.
+         So,now this page was empty but this won't be empty for long time.Soon I will come with my new creations .And I will let this page full of various links to  various of my blogs on different topics...</p>
+       
+         <p class="para">Happy Reading...</p>
+        </div>
+      
+      
+<!------------------------------------------------------------->
+       <!----------------------------contacts page------------------------------------->
+
+        <div class="contactsPage" id="connect">
+            <h1 class="title">contact</h1>
+            <h3 class="sub-title">give your valuable coments to us</h3>
+            <br>
+            <form action="submit">
+
+                <div class="form">
+                    <input type="text" placeholder="name" required>
+                    <input type="email" placeholder="email" required>
+                </div>
+                <textarea name="area" id="area" placeholder="leave your coments here" required></textarea>
+                <input type="submit" id="submit" value="send message">
+            </form>
+
+        </div>
+
+
+        <!----------------------------------------------------------------->
+        <footer id="abbt">
+            <div class="foo-container">
+                <p>thank you for visiting our website</p>
+              
+                </div> 
+          <div style="text-align:center;padding:20px;" class="lll"><span><a class="hoo" href="#">Home</a></span><span><a class="b3" href="#" >blogs</a></span><span><a class="co3" href="#connect">Contact</a></span><span><a class="about3" href="#">about</a></span></div>
+              <div class="follo" style="text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 0px 5px;padding-bottom:10px;">
+                        <div class="boxx2"><a href="#"><i class="fa fa-instagram"></i></a></div>
+                        <div class="boxx2"><a href="#"><i class="fa fa-linkedin"></i></a></div>
+                        <div class="boxx2"><a href="#"><i class="fa fa-youtube"></i></a></div>
+                        <div class="boxx2"><a href="#"><i class="fa fa-facebook"></i></a></div>
+                        <div class="boxx2"><a href="#"><i class="fa fa-dropbox"></i></a></div>
+              </div>
+          </div>
+        </footer>
+      <div class="last" style="text-align:center;font-size:11px;padding:8px 0px;">&#169;&nbsp;&nbsp;this is my first trial blog .So some of the contents used are taken from google.</div>
+    </div>
+<script>
+
+        let nav = document.getElementById("nvv");
+        let hide = document.getElementById("hidden");
+
+        function goDown() {
+            if (nav.checked == true) {
+                hide.style.top = "40px";
+            } else {
+                hide.style.top = "-160px";
+            }
+        }
+
+
+        let media = document.getElementById("media");
+        let rot = document.getElementById("rotate");
+
+        function mediaGo() {
+
+            if (med.checked == true) {
+                media.style.right = "0px";
+               
+            } else {
+                media.style.right = "-20px";
+              
+            }
+        }
+//  “It can be a consulting assignment, contract work, freelancing...really, anything where you’re in the driver’s seat,” says Diane Mulcahy, author of The Gig Economy: The Complete Guide to Getting Better Work, Taking More Time Off, and Financing the Life You Want".
+// by
+let container = document.querySelector(".container");
+
+        let aboutpage = document.querySelector(".aboutpage");
+
+        let about = document.querySelector(".aboutp");
+        let about2 = document.querySelector(".aboutp2");
+        let about3 = document.querySelector(".about3");
+
+let blg = document.querySelector(".blogs");
+
+function contacts(para){
+        para.addEventListener("click", () => {
+            container.style.display = "none";
+            blg.style.display ="none";
+            aboutpage.style.display = "block";
+          
+
+            hide.style.top = "-160px";
+            nav.checked = true;
+        })
+};
+
+contacts(about);
+contacts(about2);
+contacts(about3);
+// =============================================
+let home = document.querySelector(".hhoom");
+let home2 = document.querySelector(".hhoom2");
+let hoo = document.querySelector(".hoo");
+
+
+function homefun(para){
+para.addEventListener("click", () => {
+            
+            aboutpage.style.display = "none";
+            container.style.display = "block";
+            blg.style.display ="none";
+
+            hide.style.top = "-160px";
+            nav.checked = true;
+        })
+}
+homefun(home);
+homefun(home2);
+homefun(hoo);
+
+
+
+// ===================================
+let b1 = document.querySelector(".b1");
+let b2 = document.querySelector(".b2");
+let b3 = document.querySelector(".b3");
+
+
+
+function blog(para){
+  para.addEventListener("click",()=>{
+    
+            aboutpage.style.display = "none";
+            container.style.display = "none";
+            blg.style.display ="block";
+
+            hide.style.top = "-160px";
+            nav.checked = true;
+    
+  })
+}
+
+blog(b1);
+blog(b2);
+blog(b3);
+
+// ==================================
+co1=document.querySelector(".co1");
+co2=document.querySelector(".co2");
+co3=document.querySelector(".co3");
+
+
+
+
+function coo(para){
+  para.addEventListener("click",()=>{
+            hide.style.top="-160px";
+            nav.checked = true;
+    
+  })
+}
+coo(co1);
+coo(co2);
+coo(co3);
+</script>
+</body>
+
+</html>
